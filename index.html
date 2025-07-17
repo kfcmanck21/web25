@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>모두의 성장을 위한 T.I.P. 학생맞춤통합지원 활성화 지원 계획</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <style>
+        /* Pretendard 폰트 적용 */
+        body {
+            font-family: 'Pretendard', sans-serif;
+            scroll-behavior: smooth;
+        }
+        /* Details/Summary 아코디언 화살표 커스텀 */
+        summary::marker {
+            content: '';
+        }
+        summary::-webkit-details-marker {
+            display: none;
+        }
+        summary {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        summary .arrow {
+            transition: transform 0.2s;
+        }
+        details[open] summary .arrow {
+            transform: rotate(90deg);
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: '#1E3A8A', // 군청색
+                        sky: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            200: '#bae6fd',
+                            300: '#7dd3fc',
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                        },
+                        teal: {
+                            50: '#f0fdfa',
+                            100: '#ccfbf1',
+                            200: '#99f6e4',
+                            500: '#14b8a6',
+                        },
+                        orange: {
+                            100: '#ffedd5',
+                            200: '#fed7aa',
+                            500: '#f97316',
+                        },
+                    },
+                    fontFamily: {
+                        sans: ['Pretendard', 'sans-serif'],
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+<body class="bg-sky-50 text-slate-800">
+
+    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex items-center">
+                    <a href="#" class="flex-shrink-0">
+                        <h1 class="text-xl md:text-2xl font-bold text-navy">
+                            🎓 T.I.P. 통합지원 계획
+                        </h1>
+                    </a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#background" class="text-slate-600 hover:bg-sky-100 hover:text-navy px-3 py-2 rounded-md text-sm font-medium">📜 배경</a>
+                        <a href="#purpose" class="text-slate-600 hover:bg-sky-100 hover:text-navy px-3 py-2 rounded-md text-sm font-medium">🎯 목적</a>
+                        <a href="#analysis" class="text-slate-600 hover:bg-sky-100 hover:text-navy px-3 py-2 rounded-md text-sm font-medium">📊 정책 분석</a>
+                        <a href="#overview" class="text-slate-600 hover:bg-sky-100 hover:text-navy px-3 py-2 rounded-md text-sm font-medium">🚀 추진 개요</a>
+                        <a href="#details" class="text-slate-600 hover:bg-sky-100 hover:text-navy px-3 py-2 rounded-md text-sm font-medium">📝 세부 계획</a>
+                        <a href="#effects" class="text-slate-600 hover:bg-sky-100 hover:text-navy px-3 py-2 rounded-md text-sm font-medium">✨ 기대 효과</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-4xl mx-auto p-5 md:p-10">
+        
+        <header class="text-center mb-16">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-navy mb-4">모두의 성장을 위한 T.I.P.</h1>
+            <p class="text-lg md:text-xl text-slate-600">학생맞춤통합지원 활성화 지원 계획(안)</p>
+        </header>
+
+        <div class="space-y-16">
+
+            <section>
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-slate-200">
+                    <h2 class="text-2xl font-bold text-navy mb-4">💡 T.I.P. 이란?</h2>
+                    <p class="text-slate-600 leading-relaxed mb-4">
+                        T.I.P.은 교육공동체의 <span class="font-semibold text-teal-600">신뢰(Trust)</span>, <span class="font-semibold text-sky-600">통찰(Insight)</span>, <span class="font-semibold text-orange-600">참여(Participation)</span>를 의미하며, 학생의 온전한 성장과 발달을 돕는 학생맞춤통합지원의 학교 현장 안착과 활성화를 위한 핵심 전략입니다.
+                    </p>
+                    <div class="mt-6 bg-sky-100 border-l-4 border-sky-500 text-sky-800 p-4 rounded-r-lg">
+                        <p class="font-semibold">학생맞춤통합지원법의 목적</p>
+                        <p class="text-sm mt-1">학생 개인의 상황에 적합한 통합적 지원(학습, 복지, 건강, 진로 등)을 제공하여 모든 학생의 교육받을 권리를 보장하고 전인적 인재로 성장하도록 돕습니다.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="background">
+                <h2 class="text-3xl font-bold mb-6 text-navy flex items-center"><span class="mr-3">📜</span>주제 설정 배경</h2>
+                <div class="space-y-4 text-slate-700 leading-relaxed">
+                    <p>✅ <span class="font-semibold">학생맞춤통합지원법 제정 및 시행:</span> 2026년 3월 1일 법률 시행에 따라 학교 현장 안착을 위한 지원 전략 수립이 필요합니다.</p>
+                    <p>✅ <span class="font-semibold">2025 교육부 주요 업무:</span> 모든 학생의 성장을 지원하는 '통합지원 체계'로의 패러다임 전환을 목표로 합니다.</p>
+                    <p>✅ <span class="font-semibold">교육지원청 조직 개편:</span> '학생맞춤협력과' 신설 등 학생 개개인에 대한 맞춤형 지원 기능을 대폭 강화합니다.</p>
+                    <p>✅ <span class="font-semibold">단위학교 지원 체계 재구조화:</span> 학교-교육청-지역 간 연계를 통해 학생을 조기 발견하고 맞춤 지원하는 통합 체계를 구축합니다.</p>
+                    
+                    <details class="bg-white rounded-lg shadow border border-slate-200 mt-6">
+                        <summary class="p-4 cursor-pointer font-semibold text-lg text-navy">
+                            현행 사업별 학생 지원 체계의 한계 (클릭하여 펼치기)
+                            <span class="arrow text-2xl text-sky-500">›</span>
+                        </summary>
+                        <div class="p-4 border-t border-slate-200 text-slate-600 space-y-3">
+                            <p>❌ <span class="font-bold">중복 지원과 사각지대 공존:</span> 사업별 이력 관리로 인해 지원이 편중되거나 누락되는 문제가 발생합니다.</p>
+                            <p>❌ <span class="font-bold">지원 단절:</span> 상급학교 진학 또는 전학 시 학생 지원 정보가 단절되어 연속적인 지원이 어렵습니다.</p>
+                            <p>❌ <span class="font-bold">사후 대처 중심:</span> 조기 발굴보다 사업 대상자 선정 및 지원에 치중하는 경향이 있습니다.</p>
+                            <p>❌ <span class="font-bold">컨트롤타워 부재:</span> 복합적 어려움을 가진 학생 지원을 총괄하는 체계가 미흡합니다.</p>
+                            <p>❌ <span class="font-bold">보호자 미협조 시 지원 곤란:</span> 긴급한 지원이 필요해도 보호자 협조 없이는 개입이 어렵습니다.</p>
+                        </div>
+                    </details>
+                </div>
+            </section>
+
+            <section id="purpose">
+                <h2 class="text-3xl font-bold mb-6 text-navy flex items-center"><span class="mr-3">🎯</span>목적</h2>
+                <ul class="space-y-4 list-inside">
+                    <li class="flex items-start bg-white p-4 rounded-lg shadow-sm border-l-4 border-teal-500">
+                        <span class="text-xl mr-3">🤝</span>
+                        <div><span class="font-bold">신뢰와 책무 기반 공감대 형성:</span> 학교 내 소통을 활성화하고 정책 홍보를 통해 긍정적 인식을 확산합니다.</div>
+                    </li>
+                    <li class="flex items-start bg-white p-4 rounded-lg shadow-sm border-l-4 border-sky-500">
+                        <span class="text-xl mr-3">🧠</span>
+                        <div><span class="font-bold">공유와 협력 기반 통찰력 강화:</span> 온·오프라인 정보 공유로 중단 없는 성장을 지원하고, 맞춤형 연수로 교원 역량을 강화합니다.</div>
+                    </li>
+                    <li class="flex items-start bg-white p-4 rounded-lg shadow-sm border-l-4 border-orange-500">
+                        <span class="text-xl mr-3">🌐</span>
+                        <div><span class="font-bold">참여와 소통 기반 협력 체계 구축:</span> 지역자원을 체계화하고 다양한 주체와 협력하여 빈틈없는 지원 환경을 조성합니다.</div>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="analysis">
+                <h2 class="text-3xl font-bold mb-6 text-navy flex items-center"><span class="mr-3">📊</span>정책 분석 및 시사점</h2>
+                <div class="bg-white p-6 rounded-xl shadow-lg border border-slate-200 space-y-6">
+                    <div>
+                        <h3 class="text-xl font-semibold text-navy mb-2">1. 주요 내용</h3>
+                        <p class="text-slate-600">다양한 교육지원청에서 카드뉴스, 홍보툰, 안내자료(드림 프로젝트) 등을 통해 학생맞춤통합지원의 이해를 돕고 있습니다.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-navy mb-2">2. 실태 및 문제점</h3>
+                        <div class="grid md:grid-cols-2 gap-4 text-sm">
+                            <div class="bg-red-50 p-4 rounded-lg border border-red-200">
+                                <p class="font-bold text-red-800">❗ 인식 편차 및 협력 저해</p>
+                                <p class="text-red-700 mt-1">지역·학교 간 인식 차이가 크고, '업무 과중'이 협력을 방해하는 주요 요인으로 작용합니다.</p>
+                            </div>
+                            <div class="bg-yellow-50 p-4 rounded-lg border border-yellow-200">
+                                <p class="font-bold text-yellow-800">❗ 정보 부족 및 역량 한계</p>
+                                <p class="text-yellow-700 mt-1">정보 단절로 지원 사각지대가 발생하며, 교원 역량 강화 연수가 일부 담당자 위주로 진행됩니다.</p>
+                            </div>
+                            <div class="bg-blue-50 p-4 rounded-lg border border-blue-200 col-span-1 md:col-span-2">
+                                <p class="font-bold text-blue-800">❗ 협력 네트워크 미흡</p>
+                                <p class="text-blue-700 mt-1">지역 자원 활용이 부족하고, 현장의 업무 부담을 경감할 지원 체계가 미흡합니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div>
+                        <h3 class="text-xl font-semibold text-navy mb-2">3. 시사점</h3>
+                        <ul class="space-y-3 text-slate-700">
+                            <li>✅ <span class="font-semibold">운영 모델 개발:</span> 학교 내 역할 분담 및 협력 시스템을 구축하고, 위원회를 통합한 운영 모델을 개발해야 합니다.</li>
+                            <li>✅ <span class="font-semibold">정보 공유 체계 확립:</span> 학생 데이터를 표준화하고, 지역·학교 간 정보 연계 시스템을 구축할 필요가 있습니다.</li>
+                            <li>✅ <span class="font-semibold">지역 자원 연계 강화:</span> 교육지원청별 여건에 맞는 실질적인 인적·물적 자원 연계 계획을 수립해야 합니다.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="overview">
+                <h2 class="text-3xl font-bold mb-6 text-navy flex items-center"><span class="mr-3">🚀</span>추진 개요: T.I.P. 전략</h2>
+                <div class="grid md:grid-cols-3 gap-6 text-center">
+                    <div class="bg-teal-50 p-6 rounded-xl shadow-md border-t-4 border-teal-500 hover:shadow-xl transition-shadow">
+                        <div class="text-5xl mb-3">🤝</div>
+                        <h3 class="text-xl font-bold text-teal-800">Trust</h3>
+                        <p class="text-teal-700 font-semibold mb-3">교육공동체 공감대 형성</p>
+                        <ul class="text-sm text-left space-y-1 text-teal-900">
+                            <li>✓ 통합지원팀 모델 개발</li>
+                            <li>✓ 공감대 형성 및 인식 제고</li>
+                        </ul>
+                    </div>
+                    <div class="bg-sky-50 p-6 rounded-xl shadow-md border-t-4 border-sky-500 hover:shadow-xl transition-shadow">
+                        <div class="text-5xl mb-3">🧠</div>
+                        <h3 class="text-xl font-bold text-sky-800">Insight</h3>
+                        <p class="text-sky-700 font-semibold mb-3">학생 지원 통찰력 강화</p>
+                        <ul class="text-sm text-left space-y-1 text-sky-900">
+                           <li>✓ ON/OFF 성장지원플랫폼</li>
+                           <li>✓ 공동체 역량 강화</li>
+                        </ul>
+                    </div>
+                    <div class="bg-orange-50 p-6 rounded-xl shadow-md border-t-4 border-orange-500 hover:shadow-xl transition-shadow">
+                        <div class="text-5xl mb-3">🌐</div>
+                        <h3 class="text-xl font-bold text-orange-800">Participation</h3>
+                        <p class="text-orange-700 font-semibold mb-3">협력체계 구축</p>
+                        <ul class="text-sm text-left space-y-1 text-orange-900">
+                           <li>✓ 지역·가정 네트워크 활성화</li>
+                           <li>✓ 지속적 맞춤지원 체계 구축</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="details">
+                <h2 class="text-3xl font-bold mb-8 text-navy flex items-center"><span class="mr-3">📝</span>세부 추진 계획</h2>
+                <div class="space-y-12">
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-4 text-teal-700">1. Trust: 교육공동체 공감대 형성</h3>
+                        <div class="space-y-4 bg-white p-6 rounded-lg shadow-sm border-l-4 border-teal-500">
+                            <p><strong>운영 모델 개발:</strong> 핵심교원 TF팀 구성, 교육과정 연계 컨설팅, 학교 업무 표준안 제공 <span class="text-xs font-semibold bg-orange-200 text-orange-800 py-0.5 px-2 rounded-full">신규</span></p>
+                            <p><strong>인식 제고 및 홍보:</strong> 정책 연구 <span class="text-xs font-semibold bg-orange-200 text-orange-800 py-0.5 px-2 rounded-full">신규</span>, 이야기 공모전 개최 <span class="text-xs font-semibold bg-orange-200 text-orange-800 py-0.5 px-2 rounded-full">신규</span>, 포럼 및 컨퍼런스 확대</p>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-4 text-sky-700">2. Insight: 학생 지원 통찰력 강화</h3>
+                        <div class="space-y-4 bg-white p-6 rounded-lg shadow-sm border-l-4 border-sky-500">
+                           <p><strong>ON/OFF 성장지원플랫폼 운영:</strong> (OFF) 기존 플랫폼 내실화, (ON) 정보 공유 중심 통합지원 플랫폼 구축 <span class="text-xs font-semibold bg-orange-200 text-orange-800 py-0.5 px-2 rounded-full">신규</span> (학생 맞춤 통합 이력카드, 정보 공유 체계 확립)</p>
+                           <p><strong>공동체 역량 강화:</strong> 기관 유형별 맞춤 연수 확대, 교육지원청 나눔 한마당 '나들이해' 운영 <span class="text-xs font-semibold bg-orange-200 text-orange-800 py-0.5 px-2 rounded-full">신규</span></p>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-4 text-orange-700">3. Participation: 협력체계 구축</h3>
+                        <div class="space-y-4 bg-white p-6 rounded-lg shadow-sm border-l-4 border-orange-500">
+                           <p><strong>지역·가정 연계 네트워크:</strong> 지역연계자원 플랫폼 개선, 학생맞춤통합지원 활동가 배치 확대, 학부모회 공모사업 연계 <span class="text-xs font-semibold bg-orange-200 text-orange-800 py-0.5 px-2 rounded-full">신규</span></p>
+                           <p><strong>지속적 협력체계 구축:</strong> 학생 생활권 단위 협의체 지원 확대, 관련 업무 이관 및 효율화 지원 <span class="text-xs font-semibold bg-orange-200 text-orange-800 py-0.5 px-2 rounded-full">신규</span></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="effects">
+                <h2 class="text-3xl font-bold mb-6 text-navy flex items-center"><span class="mr-3">✨</span>기대 효과</h2>
+                <div class="space-y-6">
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                        <h3 class="text-xl font-bold text-navy mb-2">🧑‍🎓 학생의 전인적 성장 지원</h3>
+                        <p class="text-slate-600">통합 진단 및 관리로 촘촘한 성장지원망을 구축하고, 전방위적 맞춤 지원 토대를 강화합니다.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                        <h3 class="text-xl font-bold text-navy mb-2">👩‍🏫 교사의 전문성 및 긍지 증진</h3>
+                        <p class="text-slate-600">협력적 지원을 통해 교사 소진을 예방하고, 업무 효율화를 통해 협력적 전문성을 높입니다.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                        <h3 class="text-xl font-bold text-navy mb-2">🏫 교육 공동체 책무성 강화</h3>
+                        <p class="text-slate-600">다층적 네트워크로 인적·물적 인프라를 확보하고, 유기적인 교육 생태계를 통해 공교육의 신뢰도를 높입니다.</p>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="text-center p-6 mt-10 bg-slate-100 border-t border-slate-200">
+        <p class="text-sm text-slate-500">본 페이지는 교육 콘텐츠 시각화 전문가에 의해 제작되었습니다.</p>
+    </footer>
+
+</body>
+</html>
